@@ -1,0 +1,11 @@
+
+function MySplitFunction()	{
+	if ((document.getElementById('dd1').value != '') && (document.getElementById('dd2').value != '') && (document.getElementById('dd3').value != ''))	
+	{
+		//var myUrl = 'dd1=' + document.getElementById('dd1').value + "||" 'dd2=' + document.getElementById('dd2').value + "||"+ 'dd3=' + document.getElementById('dd3').value;
+		var myUrl = 'dd1=' + document.getElementById('dd1').value.toLowerCase() + "||" + 'dd2=' + document.getElementById('dd2').value.toLowerCase() + "||" + 'dd3=' + document.getElementById('dd3').value.toLowerCase();
+		window.location.href = 'http://thegma.com/atlashonda/compare/' + '?' + myUrl;
+		//window.location.href = 'NewPage.html';
+	}
+}
+
